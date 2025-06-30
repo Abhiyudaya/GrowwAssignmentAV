@@ -2,22 +2,6 @@
 **Assessment by:** Abhiyudaya Vatsa  
 📞 6392224552  
 
----
-
-## 🔗 Live Demo  
-Watch the walkthrough:  
-https://drive.google.com/file/d/16kPkJkCwPN7gOoNe7tClQj6mKRVGk-BI/view?usp=sharing  
-
----
-
-## 📷 Screenshots  
-
-| Explore | Product Detail | Watchlist | View All |
-|:-------:|:--------------:|:---------:|:--------:|
-| <img src="screenshots/ss1.jpg" width="150" /> | <img src="screenshots/ss2.jpg" width="150" /> | <img src="screenshots/ss3.jpg" width="150" /> | <img src="screenshots/ss6.jpg" width="150" /> |
-| <img src="screenshots/ss33.jpg" width="150" /> | <img src="screenshots/ss44.jpg" width="150" /> |  |  |
-
----
 
 ## 🏗️ Project Layout
 
