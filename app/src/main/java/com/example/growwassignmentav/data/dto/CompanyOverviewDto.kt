@@ -4,7 +4,7 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class CompanyOverviewDTO(
+data class CompanyOverviewDto(
     @Json(name = "Symbol") val symbol: String?,
     @Json(name = "Name") val name: String?,
     @Json(name = "Description") val description: String?,

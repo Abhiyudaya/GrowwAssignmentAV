@@ -4,7 +4,7 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class TimeSeriesDTO(
+data class TimeSeriesDto(
 
     @Json(name = "Time Series (Daily)")
     val dailySeries: Map<String, StockPricePoint>? = null,

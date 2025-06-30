@@ -4,7 +4,7 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class TopGainersLosersDTO(
+data class TopGainersLosersDto(
     @Json(name = "metadata")
     val metadata: String? = null,
 

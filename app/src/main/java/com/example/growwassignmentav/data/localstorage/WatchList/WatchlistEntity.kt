@@ -1,11 +1,11 @@
-package com.example.growwassignmentav.data.localstorage.Wishlist
+package com.example.growwassignmentav.data.localstorage.WatchList
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 
-@Entity(tableName = "wishlists")
-data class WishListEntity(
+@Entity(tableName = "watchlists")
+data class WatchlistEntity(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
     val name: String,

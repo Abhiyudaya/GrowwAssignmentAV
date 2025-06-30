@@ -1,20 +1,24 @@
 package com.example.growwassignmentav.data.api
 
+import com.example.growwassignmentav.data.dto.CompanyOverviewDto
+import com.example.growwassignmentav.data.dto.SearchResultDto
+import com.example.growwassignmentav.data.dto.TimeSeriesDto
+import com.example.growwassignmentav.data.dto.TopGainersLosersDto
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
 object ApiKeyProvider {
     val ALPHA_API_KEY: String
-        get() = "3BU3IE38491KNRBF"
+        get() = "M27SV7OXO8OLZPRM"
 }
 
-interface GrowwApi {
+interface StockApi {
 
     @GET("query")
     suspend fun getTopGainersLosers(
         @Query("function") function: String = "TOP_GAINERS_LOSERS",
-        @Query("apikey") apiKey: String = com.example.growwassignmentav.data.api.ApiKeyProvider.ALPHA_API_KEY
+        @Query("apikey") apiKey: String = ApiKeyProvider.ALPHA_API_KEY
 
     ): Response<TopGainersLosersDto>
 

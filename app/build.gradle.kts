@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.implementation
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -57,8 +59,12 @@ dependencies {
 
     implementation("androidx.core:core-splashscreen:1.0.0")
 
+    implementation("androidx.compose.material:material-icons-extended:1.7.8")
+
 
     implementation("com.google.dagger:hilt-android:2.48")
+    implementation(libs.play.services.appsearch)
+    implementation(libs.androidx.benchmark.common)
     kapt("com.google.dagger:hilt-compiler:2.48")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
 

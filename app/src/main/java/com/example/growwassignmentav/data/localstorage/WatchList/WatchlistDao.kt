@@ -1,4 +1,4 @@
-package com.example.growwassignmentav.data.localstorage.Wishlist
+package com.example.growwassignmentav.data.localstorage.WatchList
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -7,7 +7,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
 @Dao
-interface WishListDao {
+interface WatchlistDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertWatchlist(watchlist: WatchlistEntity): Long
