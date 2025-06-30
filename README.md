@@ -1,0 +1,140 @@
+# Android Stocks & ETFs Broking App  
+**Assessment by:** Abhiyudaya Vatsa  
+📞 6392224552  
+
+---
+
+## 🔗 Live Demo  
+Watch the walkthrough:  
+https://drive.google.com/file/d/16kPkJkCwPN7gOoNe7tClQj6mKRVGk-BI/view?usp=sharing  
+
+---
+
+## 📷 Screenshots  
+
+| Explore | Product Detail | Watchlist | View All |
+|:-------:|:--------------:|:---------:|:--------:|
+| <img src="screenshots/ss1.jpg" width="150" /> | <img src="screenshots/ss2.jpg" width="150" /> | <img src="screenshots/ss3.jpg" width="150" /> | <img src="screenshots/ss6.jpg" width="150" /> |
+| <img src="screenshots/ss33.jpg" width="150" /> | <img src="screenshots/ss44.jpg" width="150" /> |  |  |
+
+---
+
+## 🏗️ Project Layout
+
+com.example.stocksapp/
+│
+├─ data/
+│ ├─ api/ # Retrofit interfaces (StockApi.kt)
+│ ├─ dto/ # Alpha Vantage response models
+│ └─ local/ # Room DAOs & entities
+│ ├─ WatchlistDao.kt
+│ └─ StockPerformanceDao.kt
+│
+├─ di/ # Hilt modules
+│ ├─ DatabaseModule.kt
+│ ├─ NetworkModule.kt
+│ └─ RepositoryModule.kt
+│
+├─ domain/
+│ ├─ model/ # Domain entities (StockPerformance, Company)
+│ └─ repository/ # Interface definitions
+│
+├─ presentation/
+│ ├─ ui/ # Compose screens & components
+│ └─ viewmodels/ # ExploreViewModel, ProductViewModel
+│
+└─ utils/
+└─ UiState.kt # Sealed classes for loading/error/success
+
+markdown
+Copy
+Edit
+
+---
+
+## 🔍 Key Features
+
+1. **Top Gainers & Losers**  
+   - Two horizontal carousels  
+   - Caching (30 min) + live API fallback  
+
+2. **Watchlist Management**  
+   - Create & view custom watchlists  
+   - Persistent with Room  
+
+3. **Stock Detail Screen**  
+   - Interactive time‑range selector (1D, 1W, 1M, 1Y, 5Y, All)  
+   - Custom Canvas chart component  
+   - Company overview & metrics  
+
+4. **Add to Watchlist Dialog**  
+   - In‑screen modal for quick watchlist toggles  
+
+5. **“View All” Paginated Lists**  
+   - Client‑side pagination  
+   - Smooth page indicators & jump‑to‑top  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Kotlin  
+- **UI:** Jetpack Compose (Material3)  
+- **Architecture:** MVVM + Clean Architecture  
+- **DI:** Hilt  
+- **Network:** Retrofit → Alpha Vantage API  
+- **Local Cache:** Room  
+
+---
+
+## ⚙️ Setup & Run
+
+1. **Clone repo**  
+   ```bash
+   git clone https://github.com/SHRAVANBISEN/GrowwAssignment.git
+   cd GrowwAssignment
+Open in Android Studio (Arctic Fox or newer)
+
+Insert API Key
+
+Open StockApi.kt
+
+Replace "REPLACE_ME_WITH_ANY_VALID_KEY" with one of:
+
+YGAUA4QIJT79XKT3
+
+MV77X9L60L0W8CO6
+
+3BU3IE38491KNRBF
+
+Build & Deploy
+
+Sync Gradle
+
+Run on emulator or physical device
+
+✔️ Testing
+Unit tests:
+
+bash
+Copy
+Edit
+./gradlew test
+Instrumented/UI tests:
+
+bash
+Copy
+Edit
+./gradlew connectedAndroidTest
+📈 Future Plans
+⚡ Real‑time WebSocket feed integration
+
+📊 Advanced charting (MA, RSI)
+
+💼 Portfolio & P&L tracking
+
+📰 News & alerts
+
+🔒 Biometric login
+
+Thank you for your time and feedback!
