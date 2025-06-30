@@ -5,34 +5,35 @@
 
 ## 🏗️ Project Layout
 
-com.example.stocksapp/
+com.example.GrowwApp/
+├── data/
+│   ├── api/GrowwApi.kt
+│   ├── local/
+│   │   ├── WatchList/WatchlistDao.kt
+│   │   └── StockPerformanceDao.kt
+│   └── dto/
+│       ├── CompanyOverviewDto.kt
+│       ├── SearchResultDto.kt
+│       └── TimeSeriesDto.kt
 │
-├─ data/
-│ ├─ api/ # Retrofit interfaces (StockApi.kt)
-│ ├─ dto/ # Alpha Vantage response models
-│ └─ local/ # Room DAOs & entities
-│ ├─ WatchlistDao.kt
-│ └─ StockPerformanceDao.kt
+├── di/
+│   ├── DatabaseModule.kt
+│   ├── NetworkModule.kt
+│   └── RepositoryModule.kt
 │
-├─ di/ # Hilt modules
-│ ├─ DatabaseModule.kt
-│ ├─ NetworkModule.kt
-│ └─ RepositoryModule.kt
+├── domain/
+│   ├── model/ (e.g., StockPerformance.kt, Company.kt)
+│   └── repository/ (interfaces)
 │
-├─ domain/
-│ ├─ model/ # Domain entities (StockPerformance, Company)
-│ └─ repository/ # Interface definitions
+├── presentation/
+│   ├── ui/ (screens, composables)
+│   └── viewmodels/
+│       ├── ExploreViewModel.kt
+│       └── ProductViewModel.kt
 │
-├─ presentation/
-│ ├─ ui/ # Compose screens & components
-│ └─ viewmodels/ # ExploreViewModel, ProductViewModel
-│
-└─ utils/
-└─ UiState.kt # Sealed classes for loading/error/success
-
-markdown
-Copy
-Edit
+├── utils/
+│   └── UiState.kt
+```
 
 ---
 
